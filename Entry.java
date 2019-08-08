@@ -22,7 +22,7 @@ JButton btn=new JButton("add");
 btn.setBounds(50,50,100,20);
 add(btn);
 btn.addActionListener(new ButtonHandler(this));
-setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 }
 }
 class ButtonHandler implements ActionListener {
@@ -58,7 +58,6 @@ class BouncingRect extends Thread
 		try {
 			Thread.sleep(50);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
